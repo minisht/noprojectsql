@@ -1,0 +1,27 @@
+## Install MongoDB
+Install the latest MongoDB version and run the below command from the bin folder of the download
+mongod --dbpath = somepath(Path you want to have the documents)
+
+## Few queries help for operating mongo db
+db.product.find({"productid":"13860428"}) --list the product by id
+db.product.insert({"productid":"testid"})
+
+## To access MongoDB
+Installed and used Robo mongo ui client
+
+## Added these dependencies in pom.xml
+#Apache 'commons-io' for reading file operations (JSON document in our case)
+#Jayway 'json-path' for parsing the json document
+#Google 'gson' for converting the object model to json 
+
+## Running code
+java -jar nosqlproject-0.0.1-SNAPSHOT.jar
+
+## Making jar 
+mvn install on project folder where pom.xml exists / right click on project root of IDE and say maven > install
+
+## Running test cases 
+mvn test on pom.xml folder / right click on project root > maven > maven test
+This would trigger both integration as well unit test cases
+
+
